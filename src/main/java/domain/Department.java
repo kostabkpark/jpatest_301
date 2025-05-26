@@ -14,15 +14,15 @@ public class Department {
     @Column(name="dept_name", length = 10, nullable = false)
     private String deptName;
 
-//    @ManyToOne(fetch = FetchType.LAZY)
-//    @JoinColumn(name="id")
-    private String company;
+    @ManyToOne //(fetch = FetchType.LAZY)
+    @JoinColumn(name="id")
+    private Company company;
 
-    public String getCompany() {
+    public Company getCompany() {
         return company;
     }
 
-    public void setCompany(String company) {
+    public void setCompany(Company company) {
         this.company = company;
     }
 //    @OneToMany(mappedBy = "department")
