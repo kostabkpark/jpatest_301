@@ -18,7 +18,7 @@ public class CompanyTest {
     // company entity 객체 생성 < == 비영속
     try {
       Company company = new Company();
-      company.setName("KOSTA");
+      company.setName("LG CNS");
       System.out.println("비영속 상태");
       // persist() <== 영속
       em.persist(company);
