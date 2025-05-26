@@ -31,6 +31,5 @@ public class CompanyTest {
       // rollback()
       tx.rollback();
     }
-
   }
 }
