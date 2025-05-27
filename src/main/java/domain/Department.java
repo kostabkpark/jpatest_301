@@ -14,7 +14,7 @@ public class Department {
     @Column(name="dept_name", length = 10, nullable = false)
     private String deptName;
 
-    @ManyToOne //(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name="id")
     private Company company;
 
