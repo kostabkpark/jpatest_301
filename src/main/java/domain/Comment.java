@@ -36,11 +36,6 @@ public class Comment { // 댓글 엔티티
     return article;
   }
 
-  public void setArticle(Article article) {
-    this.article = article;
-  }
-
-
   //== 연관관계 메서드 ==//
   public void belongToArticle(Article article) {
     this.article = article;

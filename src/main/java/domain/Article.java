@@ -17,7 +17,6 @@ public class Article { // 게시글 엔티티
   @OneToMany(mappedBy = "article", cascade = CascadeType.ALL)
   private List<Comment> comments = new ArrayList<>();
 
-
   public Long getId() {
     return id;
   }
